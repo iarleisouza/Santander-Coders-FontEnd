@@ -1,1 +1,255 @@
 
+No HTML , você só pode ter uma tag <main> em cada página. A tag <main> é usada para identificar o conteúdo principal de uma página. É recomendado que você use essa tag apenas uma vez para indicar o conteúdo principal da página, pois isso ajuda os mecanismos de busca e outras ferramentas a entenderem melhor a estrutura do seu documento HTML.
+
+Quanto ao uso das tags <header>, <footer> e <article> dentro do elemento <main>, não há problemas em fazer isso. Essas tags são elementos semânticos do HTML5 e são usadas para estruturar o conteúdo da página.
+
+Ao utilizar corretamente as tags <header>, <footer>, <article>, juntamente com outras tags semânticas, você está fornecendo uma estrutura clara e organizada para o seu conteúdo. Isso pode ajudar no SEO (Search Engine Optimization), pois os mecanismos de busca tendem a valorizar conteúdo bem estruturado.
+
+No entanto, é importante lembrar que o SEO envolve muitos outros fatores além da estrutura HTML, como relevância do conteúdo, otimização de palavras-chave, velocidade de carregamento da página, links internos e externos, entre outros. Portanto, embora a estrutura HTML seja importante, ela não é o único aspecto determinante para o SEO.
+  
+  # Html_Básico
+
+## Fundamentos:
+
+- Hyper Text =  Linguagem de marcação de hiper texto
+- Facilitar a troca , agrupamentos e atualizações de documentos,
+- W3C = Padronizar o HTML (HTML5 atual)
+- Por que saber HTML ?
+    
+    Básico mas importante ,html seria corpo , css a roupa , facil de aprender e feedback mais visual.
+    
+
+## Tags:
+
+Tudo que vem dentro das tags é um elemento HTML
+
+Tags
+
+<DOCTYPE HTML> basicamente para identificar que é um arquivo html 
+
+```html
+<!DOCTYPE html>
+```
+
+- <html> corpo todo do site
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+- Tag de cabeçalho h1 , h2 ,h3 e etc , quanto menor o numero mais importância ele terá logo texto fica destacado ou torna subtítulo
+- <p> : Paragrafo de textos ou texto de marcação para testar a pagina
+
+```html
+ <h1>
+<h2></h2>
+</h1>
+
+<p></p>
+```
+
+- Tag <meta> descrever conteúdo da pagina  , que faz aparecer em mecanismos de busca como por exemplo um conteúdo dando uma previa do site em geral, e cada meta pode ter diferenças dependendo do seu atributo fazendo coisas diferentes , a tag <meta> não precisa ter um fechamento ,
+- charset UTF-8 : unicode  (não estando com UTF-8 pode dar problemas nos textos )
+- viewport: Controlar as dimensões e escalas da pagina
+- width=device-width: Define a largura do dispositivo
+- initial-scale=1.0: Define o zoom inicial da pagina quando for acessada , padrão de leitura melhor
+- description: Dá uma descrição da pagina , para um buscador .
+
+```html
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="descricao da pagina">
+```
+
+- Tag <img> para colocar imagens , background , também não precisa ser fechada
+- tbm a tag img pode se ta colocando imagem externa copiando url da imagem .
+- src  é o caminho da imagem .
+- alt  descrição quando a imagem não carregar e para acessibilidade.
+- title : passar mouse dará uma descrição da imagem.
+- Link gerador de imagem com tamanho definido: [https://placeholder.com/](https://placeholder.com/)
+
+```html
+<img src="" alt="" title="">
+```
+
+- <title> titulo da pagina
+
+```html
+<title>Document</title>
+```
+
+- <head> basicamente onde vai links do css , scripty , os metas , title que são suas definições da pagina
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+		<script src=""></script>
+    <title>Document</title>
+</head>
+```
+
+- <body> corpo do html basicamente toda informação vai nele e que o usuário final vai estar vendo diferente do head que é visível para o desenvolvedor e etc.
+
+```html
+<body>
+    <p> </p>
+	 <h1></h1>
+	 <ul><li></li></ul>
+</body>
+```
+
+- <b> : Deixa texto ou palavra em negrito , tudo que tiver dentro vai ficar em negrito
+- <strong> : Basicamente faz mesma coisa que a tag b mas se tratando dos mecanismos de pesquisa se encaixa melhor e mais relevante
+- <i>: Deixa palavra em itálico
+- <u>Deixa texto sublinhado
+- <s>taxado que risca a palavra
+
+❗❗❗Não é recomendado utilizar essas tags por estetica pois a parte de estilizar é por conta do CSS
+
+```html
+<b>palavra</b>
+<b>
+	 aijsjiajisaji 
+</b>
+<strong></strong>
+
+<i>italico</i>
+<u>sublinhado<u>
+<s> strike b</s>
+
+```
+
+## Estrutura básica HTML
+
+- Estrutura de organização
+    - Pasta
+        - src
+            - css
+                
+                reset.css
+                
+                style.css
+                
+            - imagem
+                
+                imagem.png
+                
+            - js
+                
+                index.js
+                
+    
+    index.html
+    
+
+## Atalho para fazer estrutura = !
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+### Comentário *<!---->*
+
+Serve também para não mostrar ao usuario 
+
+Comando CRTL+ :  Irá comentar um codigo ja existente ou facilitar pra fazer a tag
+
+Comando CRTL + ; Comenta direto facilitar no VSCODE
+
+Basicamente é algo para comentar sobre o codigo ou deixar uma instrução e que não afetara o codigo e se não fechar a o comentario todo o codigo vai virar comentario, fazer marcações do que deve ser feito 
+
+Retirar os codigos comentados quando não tiverem mais sendo utilizados , e evitar fazer muitos comentarios para não poluir o codigo e deixar codigo mais simples e facil de entender 
+
+```html
+*<!-- comente-->*
+```
+
+## Links Externos
+
+<a> Basicamente é link que quando o usuário clicar vai ser levado a outra pagina como por exemplo link que vai para linkedin.
+
+target="_blank  Para não sobrepor o site sobre outro e abrir em uma nova guia ou aba nova e manter a aba do seu site aberta e não prejudicar fluxo do site  
+
+```html
+<a href="http://" target="_blank"></a>
+```
+
+## Links Internos
+
+<a> Basicamente diferença que não utilizara o htpp pois é link interno de pagina do site
+
+Atalho Crtl+ Barra : Lista todos os arquivos dentro da pasta  
+
+ ../ :Voltar para pagina inicial ou voltar uma pasta 
+
+```html
+<a href="paginas/pagina2.html" ></a>
+
+<a href="../index.html" ></a>
+```
+
+## Listas
+
+Tipos de listas
+
+Macetes pra agilizar a criar uma lista ul>li*numero de quantos itens na lista.
+
+- Lista não ordenada
+    - É uma lista que não segue uma ordem
+    - <ul> Para criar uma lista
+    - <li> Para criar item da lista
+    
+    ```html
+    <ul>
+    <li>compras</li>
+    </ul>
+    ```
+    
+- Lista ordenada
+    - Essa lista vai ter uma ordem a ser seguida e com numero ao lado
+    - <ol> Para criar a lista ordenada , o <li> não muda
+    
+    ```html
+    <ol>
+    <li>Ranking</li>
+    </ol>
+    ```
+    
+
+## Tabela
+
+[LInk com outras tags mais avançadas de tabela](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/tfoot)
+
+![Estrutura+de+uma+tabela.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b147eaf9-2be1-497b-9550-ba3557438003/Estruturadeumatabela.jpg)
+
+- table>tr*3>td*5
+- <table> A tabela em si estrutura
+- <th> seria o cabeçalho da tabela
+- <tr> seriam as linhas da tabela
+- <td>dados dos itens da tabela
+  
